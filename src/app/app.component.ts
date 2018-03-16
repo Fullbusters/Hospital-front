@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
  constructor(private patientService: PatientService) {
 
  }
-
+ // check
  ngOnInit() {
 
    this.patientService.getList().subscribe(data => {
