@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="panel panel-default col-md-12" >
+    <div class="panel-heading ">
+        <pre> Створення нового пацієнта </pre>
+    </div>
+    <div class="panel-body">
+      <form (ngSubmit)="onSubmit()" #PatientForm="ngForm"  class="form-horizontal" >
+        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+          <div class="form-group">
+            <label  for="firstName">First Name*</label>
+            <input  type="text" class="form-control" id="firstName" [(ngModel)]="model.firstName" placeholder="firstName" name="firstName"/>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+          <div class="form-group">
+            <label for="lastName">Last Name*</label>
+            <input type="text" class="form-control" id="lastName" [(ngModel)]="model.lastName" placeholder="lastName" name="lastName"/>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+          <div class="form-group">
+            <label for="dateOfBirth">Date Of Birth   format:(yyyy-mm-dd)*</label>
+            <input type="text" class="form-control" id="dateOfBirth" [(ngModel)]="model.dateOfBirth" placeholder="dateOfBirth" name="dateOfBirth"/>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+          <div class="form-group">
+            <label for="sex">Sex* format(male or female)</label>
+            <input type="text"  class="form-control"  id="sex" [(ngModel)]="model.sex" placeholder="sex" name="sex"/>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+          <div class="form-group">
+            <label for="country">Country*</label>
+            <input type="text" class="form-control" id="country" [(ngModel)]="model.country" placeholder="country" name="country"/>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+          <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" class="form-control" id="state" [(ngModel)]="model.state" placeholder="state" name="state" />
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+          <div class="form-group">
+            <label for="address">Address*</label>
+            <input type="text" class="form-control" id="address" [(ngModel)]="model.address" placeholder="address" name="address"/>
+          </div>
+        </div>
+        <div class="col-xs-6 col-xs-offset-5 col-md-3 col-md-offset-5 col-lg-2 col-lg-offset-5">
+          <button type="submit" class="btn btn-default btn-block" (click)="post(model)" >Save patient</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+</div>
+

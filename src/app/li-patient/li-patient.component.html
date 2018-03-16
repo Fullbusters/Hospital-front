@@ -1,0 +1,16 @@
+ <ul class="nav " >
+    <li>
+      <a routerLink="/patient/{{patient.patientId}}" role="button" class="btn">
+        <p align="left">{{patient.firstName}} {{patient.lastName}} </p>
+        <table class="text">
+          <tr>
+            <td>{{patient.dateOfBirth}}</td>
+            <td class="rightcol">{{patient.sex}}</td>
+          </tr>
+        </table>
+        <hr align="center" width="100%" size="1px" color="black"/>
+      </a>
+    </li>
+    <li  hidden="true" role="presentation" class="active">
+    </li>
+  </ul>

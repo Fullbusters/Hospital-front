@@ -1,0 +1,28 @@
+
+
+.overflow{
+  height: 550px;
+  overflow: auto;
+  bottom: 10px;
+  padding: 10px;
+  border: 1px double #e0e0e0;
+}
+.panel {
+  position: absolute;
+  height: 700px;
+}
+.hr{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.table{
+  width:  100%;
+  border-spacing: 0;
+}
+table.text td {
+  width: 50%;
+  vertical-align: top;
+}
+td.rightcol {
+  text-align: right;
+}
